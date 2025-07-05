@@ -21,3 +21,8 @@ venv\Scripts\activate       # Windows
 # 3. Install dependencies
 pip install -r requirements.txt
 
+## Run
+```bash
+# 1. Run the script
+python fetch_ache_inhibitors.py
+
