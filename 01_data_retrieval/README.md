@@ -7,9 +7,9 @@ This module fetches all reported human acetylcholinesterase (AChE) inhibitors wi
 - Python 3.8 or later  
 - Git (optional, for cloning the repository)
 
-## Setup
+## Setup & Run
 ```bash
-# 1. Clone the repository (if not already done)
+# 1. Clone the repo (if not already done)
 git clone https://github.com/yourusername/ache-inhibitor-pipeline.git
 cd ache-inhibitor-pipeline/01_data_retrieval
 
@@ -21,8 +21,5 @@ venv\Scripts\activate       # Windows
 # 3. Install dependencies
 pip install -r requirements.txt
 
-## Run
-```bash
-# 1. Run the script
+# 4. Execute the retrieval script
 python fetch_ache_inhibitors.py
-
