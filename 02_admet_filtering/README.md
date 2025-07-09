@@ -1,7 +1,7 @@
 # 02_admet_filtering
 
 ## Overview
-This module applies strict ADMET + Lipinski filtering (no toxicity) to the deduplicated ADMETlab 3.0 export. It reads `admet_full_dedup.csv`, filters on:
+This module applies strict ADMET + Lipinski filtering (no toxicity) to the deduplicated ADMETlab 3.0 export (make sure you use ADMETlab 3.0 on the SMILES strings from the previous step to obtain an equivalent file). It reads `admet_full_dedup.csv`, filters on:
 - log S ≥ –4.5  
 - log P ≤ 5.0  
 - TPSA ≤ 100 Å²  
@@ -11,7 +11,7 @@ This module applies strict ADMET + Lipinski filtering (no toxicity) to the dedup
 - H-bond donors ≤ 5  
 - H-bond acceptors ≤ 10  
 
-and writes the result to `admet_filtered.csv` for downstream UMAP/clustering.
+and writes the result to `admet_filtered.csv` for further analysis.
 
 ## Prerequisites
 - Python 3.8 or later  
